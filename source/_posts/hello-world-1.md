@@ -6,4 +6,4 @@ tags: ["AsyncAPI"]
 
 ## Testing blog
 
-This is a testing blog. See you soon!
+This is a testing blog. Blog coming soon!
