@@ -10,7 +10,7 @@ Now, let’s delve into the details of the project.
 
 ## My Project Idea
 
-My project idea is to develop an endpoint, tentatively named help/{command}, which will provide users with instructions corresponding to a given command. The primary 'help' endpoint would list all available endpoints, whereas specific commands like help/generate would return detailed information about that particular command, such as available templates and parameters.
+My project idea is to develop an endpoint, tentatively named help/{command}, which will provide users with instructions corresponding to a given command. The primary `help` endpoint would list all available endpoints, whereas specific commands like `help/generate` would return detailed information about that particular command, such as available templates and parameters.
 
 ## Getting Started with `server-api`
 My journey began with a deep dive into the `server-api` project. Analyzing the codebase, I identified six existing endpoints:
@@ -20,8 +20,8 @@ Upon familiarizing myself with these endpoints, I proceeded to set up the projec
 
 Having successfully set up the project on my local machine, I delved deeper into understanding its codebase, the overarching project structure, and its inherent workflow.
 
-## Designing the 'Help' Endpoint: Key Decisions
-I began thinking about the structure of the `/help` endpoint. Given that our objective is to provide help for multiple endpoints, let's start by considering how we would pass data to the '/help' endpoint. 
+## Designing the `\help` Endpoint: Key Decisions
+I began thinking about the structure of the `/help` endpoint. Given that our objective is to provide help for multiple endpoints, let's start by considering how we would pass data to the `/help` endpoint. 
 The project idea already suggests utilizing the `URL approach`, as **indicated by** `help/{command}`.
 You might be wondering why the project idea leaned in that direction, especially when the `request body` is such a viable option. Let's first understand the differences between the two, and then delve into why we chose `URL` over the `request body`.
 
@@ -56,7 +56,7 @@ Considering both the non-sensitive nature of the data and its compactness, using
 ]
 ```
 
-Users can now conveniently click on links like '/help/generate' to access specific functionalities, making navigation straightforward and user-friendly.
+Users can now conveniently click on links like `/help/generate` to access specific functionalities, making navigation straightforward and user-friendly.
 
 
 ## Ensuring Flexibility
