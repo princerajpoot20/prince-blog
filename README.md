@@ -1,5 +1,5 @@
 # Prince Rajpoot -Blog
-I write blogs here:: [Prince -Blog](https://princerajpoot.com/)
+I write blogs here:: [Prince -Blog](https://princerajpoot.com/).<br/>
 It would be great if you take a moment and read it.🙂
 
 ## For Contributors
