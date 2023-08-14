@@ -4,7 +4,7 @@ date: 2022-06-10
 tags: ["AsyncAPI" , "RestAPI" , "API-Endpoint" , "Mentorship Program"]
 ---
 
-First and foremost, I want to extend my gratitude to my mentor, David Pereira, for his invaluable guidance throughout this journey. I'm immensely grateful for his assistance and mentorship. Working with him has been a fantastic opportunity for me. Additionally, I’d like to extend my heartfelt thanks to my sister, Princy Rajpoot, for her tremendous support throughout this journey.
+First and foremost, I want to extend my gratitude to my mentor, **David Pereira**, for his invaluable guidance throughout this journey. I'm immensely grateful for his assistance and mentorship. Working with him has been a fantastic opportunity for me. Additionally, I’d like to extend my heartfelt thanks to my sister, **Princy Rajpoot**, for her tremendous support throughout this journey.
 
 Now, let’s delve into the details of the project.
 
@@ -25,12 +25,14 @@ I began thinking about the structure of the '/help' endpoint. Since we had to cr
 ** This could be accomplished in two ways: **
 
 1. Pass data through the URL, e.g. `https://api.asyncapi.com/help/generate`
-2. Convey data via the request body by sending parameters in JSON format, e.g.` { "command": "generate" }`
+2. Convey data via the request body by sending parameters in JSON format, e.g.
+```
+ {
+   "command": "generate"
+}
+```
 
-
-The challenge, then, was deciding which method best suited our needs. From my research
-
-
+The challenge, then, was deciding which method best suited our needs.
 Based on my research:
 
 - **URL-based data transmission** is ideal when:
