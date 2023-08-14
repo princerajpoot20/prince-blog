@@ -10,6 +10,7 @@ Now, let’s delve into the details of the project.
 
 ## My Project Idea
 
+My project idea is to develop an endpoint, tentatively named help/{command}, which will provide users with instructions corresponding to a given command. The primary 'help' endpoint would list all available endpoints, whereas specific commands like help/generate would return detailed information about that particular command, such as available templates and parameters.
 
 ## Getting Started with `server-api`
 My journey began with a deep dive into the `server-api` project. Analyzing the codebase, I identified six existing endpoints:
@@ -21,19 +22,7 @@ Having successfully set up the project on my local machine, I delved deeper into
 
 ## Designing the 'Help' Endpoint: Key Decisions
 I began thinking about the structure of the '/help' endpoint. Since we had to create help for multiple endpoints, let's start by considering how we would pass data to the '/help' endpoint. 
-
-** This could be accomplished in two ways: **
-
-1. Pass data through the URL, e.g. `https://api.asyncapi.com/help/generate`
-2. Convey data via the request body by sending parameters in JSON format, e.g.
-```
- {
-   "command": "generate"
-}
-```
-
-The challenge, then, was deciding which method best suited our needs.
-Based on my research:
+While we've previously indicated our preference in the project idea for the URL method to pass data, you might be wondering why we leaned in that direction, especially when the request body is such a viable option. Let's first understand the differences between the two, and then delve into why we chose `URL` over the `request body`.
 
 - **URL-based data transmission** is ideal when:
    - The data amount is small, ensuring URLs don’t get too lengthy.
@@ -43,7 +32,11 @@ Based on my research:
    - Data size exceeds the URL’s character limit (usually around 2048 characters).
    - There's a need to send confidential information, which won't be visible in the URL.
 
-For our '/help' endpoint, we adopted a **URL-based approach**, considering both the non-sensitive nature of the data and its compactness. This will also **enhance user experience** by **providing relative links** to all the endpoints directly within the `/help` section, which contains a list of all the endpoints. Here is a snippet of `/help` response:
+Considering both the non-sensitive nature of the data and its compactness, using the URL method is the best choice. 
+
+## Enhance User Experience
+
+ Enhance user experience by **providing relative links** to all the endpoints directly within the `/help` section, which contains a list of all the endpoints. Here is a snippet of `/help` response:
 
 ```
 [
