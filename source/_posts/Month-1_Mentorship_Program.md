@@ -25,7 +25,7 @@ I began thinking about the structure of the `/help` endpoint. Given that our obj
 The project idea already suggests utilizing the `URL approach`, as **indicated by** `help/{command}`.
 You might be wondering why the project idea leaned in that direction, especially when the `request body` is such a viable option. Let's first understand the differences between the two, and then delve into why we chose `URL` over the `request body`.
 
-- **URL-based data transmission** is ideal when:
+- **`URL-based` data transmission** is ideal when:
    - The data amount is small, ensuring URLs don’t get too lengthy.
    - The information isn't sensitive. For context, transmitting sensitive data, like passwords, in URLs can expose them.
    
@@ -33,7 +33,7 @@ You might be wondering why the project idea leaned in that direction, especially
    - Data size exceeds the URL’s character limit (usually around 2048 characters).
    - There's a need to send confidential information, which won't be visible in the URL.
 
-Considering both the non-sensitive nature of the data and its compactness, using the URL method is the best choice. 
+Considering both the non-sensitive nature of the data and its compactness, using the `URL method` is the best choice. 
 
 ## Enhance User Experience
 

@@ -14,7 +14,7 @@
 <meta property="og:description" content="First and foremost, I want to extend my gratitude to my mentor, David Pereira, for his invaluable guidance throughout this journey. I’m immensely grateful for his assistance and mentorship. Working wi">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-06-09T18:30:00.000Z">
-<meta property="article:modified_time" content="2023-08-14T22:19:45.184Z">
+<meta property="article:modified_time" content="2023-08-14T22:21:45.296Z">
 <meta property="article:author" content="Prince Rajpoot">
 <meta property="article:tag" content="AsyncAPI">
 <meta property="article:tag" content="RestAPI">
@@ -177,7 +177,7 @@
 <p>Having successfully set up the project on my local machine, I delved deeper into understanding its codebase, the overarching project structure, and its inherent workflow.</p>
 <h2 id="Designing-the-help-Endpoint-Key-Decisions"><a href="#Designing-the-help-Endpoint-Key-Decisions" class="headerlink" title="Designing the \help Endpoint: Key Decisions"></a>Designing the <code>\help</code> Endpoint: Key Decisions</h2><p>I began thinking about the structure of the <code>/help</code> endpoint. Given that our objective is to provide help for multiple endpoints, let’s start by considering how we would pass data to the <code>/help</code> endpoint.<br>The project idea already suggests utilizing the <code>URL approach</code>, as <strong>indicated by</strong> <code>help/&#123;command&#125;</code>.<br>You might be wondering why the project idea leaned in that direction, especially when the <code>request body</code> is such a viable option. Let’s first understand the differences between the two, and then delve into why we chose <code>URL</code> over the <code>request body</code>.</p>
 <ul>
-<li><p><strong>URL-based data transmission</strong> is ideal when:</p>
+<li><p><strong><code>URL-based</code> data transmission</strong> is ideal when:</p>
 <ul>
 <li>The data amount is small, ensuring URLs don’t get too lengthy.</li>
 <li>The information isn’t sensitive. For context, transmitting sensitive data, like passwords, in URLs can expose them.</li>
@@ -190,7 +190,7 @@
 </ul>
 </li>
 </ul>
-<p>Considering both the non-sensitive nature of the data and its compactness, using the URL method is the best choice. </p>
+<p>Considering both the non-sensitive nature of the data and its compactness, using the <code>URL method</code> is the best choice. </p>
 <h2 id="Enhance-User-Experience"><a href="#Enhance-User-Experience" class="headerlink" title="Enhance User Experience"></a>Enhance User Experience</h2><p> Enhance user experience by <strong>providing relative links</strong> to all the endpoints directly within the <code>/help</code> section, which contains a list of all the endpoints. Here is a snippet of <code>/help</code> response:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    ...</span><br><span class="line">    </span><br><span class="line">    &#123;</span><br><span class="line">        &quot;command&quot;: &quot;parse&quot;,</span><br><span class="line">        &quot;url&quot;: &quot;/help/parse&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;command&quot;: &quot;generate&quot;,</span><br><span class="line">        &quot;url&quot;: &quot;/help/generate&quot;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    ...</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
 
