@@ -21,14 +21,15 @@ Upon familiarizing myself with these endpoints, I proceeded to set up the projec
 Having successfully set up the project on my local machine, I delved deeper into understanding its codebase, the overarching project structure, and its inherent workflow.
 
 ## Designing the 'Help' Endpoint: Key Decisions
-I began thinking about the structure of the '/help' endpoint. Since we had to create help for multiple endpoints, let's start by considering how we would pass data to the '/help' endpoint. 
-While we've previously indicated our preference in the project idea for the URL method to pass data, you might be wondering why we leaned in that direction, especially when the request body is such a viable option. Let's first understand the differences between the two, and then delve into why we chose `URL` over the `request body`.
+I began thinking about the structure of the '/help' endpoint. Given that our objective is to provide help for multiple endpoints, let's start by considering how we would pass data to the '/help' endpoint. 
+The project idea already suggests utilizing the `URL approach`, as **indicated by** `help/{command}`.
+You might be wondering why the project idea leaned in that direction, especially when the `request body` is such a viable option. Let's first understand the differences between the two, and then delve into why we chose `URL` over the `request body`.
 
 - **URL-based data transmission** is ideal when:
    - The data amount is small, ensuring URLs don’t get too lengthy.
    - The information isn't sensitive. For context, transmitting sensitive data, like passwords, in URLs can expose them.
    
-- **Request body data transmission** becomes crucial when:
+- **`Request body` data transmission** becomes crucial when:
    - Data size exceeds the URL’s character limit (usually around 2048 characters).
    - There's a need to send confidential information, which won't be visible in the URL.
 
