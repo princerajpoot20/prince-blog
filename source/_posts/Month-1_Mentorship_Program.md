@@ -71,6 +71,18 @@ I decided to step back for a moment. After a calming tea break, I revisited the 
 
 **But here's the twist**: I was in a race against time, needing to test repeatedly. While I couldn't beat time, I found a way to switch my user identity. 😄 Wondering how? By using a VPN, I was able to mask my IP address. This trick allowed me to simulate different users, bypassing the rate limit. Thanks to some creative problem-solving, A little creative problem-solving, and I was back on track, proving once again that there’s always a way around a roadblock, sometimes just by changing lanes!😌
 
+## Current Progress 🏗️
+
+As of now, I'm in the process of finalizing the **structure** and **defining the data** for all the commands.
+
+To facilitate this, I've employed `axios.get()` to fetch the `openapi.yml` file of the project, which contains essential data for the help command.
+
+Here's a brief on the tools and libraries in use:
+
+- **Axios**: It's a promise-based HTTP client that's both lightweight and efficient. I've specifically used it to make an HTTP request to GitHub's API and retrieve the raw contents of the `openapi.yml` file.
+
+- **js-yaml**: YAML is a human-friendly data format widely adopted for configuration files and data storage/transmission. The `js-yaml` library facilitates the parsing and stringifying of YAML content. With its `yaml.load()` function, I've converted the raw YAML content (fetched using `Axios`) into a workable JavaScript object. This transformed object now serves as the foundation for subsequent operations in the endpoint, such as **resolving references** and **pinpointing matching paths**.
+
 ## What’s next?
 
 In my next blog post, I’ll explore different challenges faced. As this phase wraps up, my attention will shift towards **creating unit tests.**
