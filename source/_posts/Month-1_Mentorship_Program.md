@@ -65,7 +65,8 @@ For our '/help' endpoint, we adopted a **URL-based approach**, considering both 
 Users can now conveniently click on links like '/help/generate' to access specific functionalities, making navigation straightforward and user-friendly.
 
 
-**Ensuring Flexibility**
+## Ensuring Flexibility
+
 During discussions with my mentor David, he highlighted that hardcoding data for the help command wasn’t ideal. Instead, sourcing it from a GitHub repository would facilitate easier updates and maintenance. Therefore, I decided to source our `/help` data from GitHub repo.
 
 ## Debugging Dilemmas: The Unexpected Rate Limit Riddle
@@ -76,7 +77,7 @@ I decided to step back for a moment. After a calming tea break, I revisited the 
 
 **But here's the twist**: I was in a race against time, needing to test repeatedly. While I couldn't beat time, I found a way to switch my user identity. 😄 Wondering how? By using a VPN, I was able to mask my IP address. This trick allowed me to simulate different users, bypassing the rate limit. Thanks to some creative problem-solving, A little creative problem-solving, and I was back on track, proving once again that there’s always a way around a roadblock, sometimes just by changing lanes!😌
 
-**What’s next?**
+## What’s next?
 
 In my next blog post, I’ll explore different challenges faced. As this phase wraps up, my attention will shift towards **creating unit tests.**
 
