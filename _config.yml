@@ -112,6 +112,7 @@ theme_config:
   nav:
     home: /
     Blog: /archives/
+    projects: http://github.com/princerajpoot20
   social_links:
     -
       icon: github
