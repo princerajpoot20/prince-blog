@@ -1,5 +1,5 @@
 ---
-title: Month 1 | Mentorship Program | Exploring and Designing Endpoint.
+title: Month 1 | AsyncAPI Mentorship Program | Exploring and Designing Endpoint.
 date: 2023-08-10
 tags: ["AsyncAPI" , "RestAPI" , "API-Endpoint" , "Mentorship Program"]
 ---
