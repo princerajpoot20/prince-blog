@@ -69,7 +69,7 @@ After researching and building the MVP structure, I delved deep into the testing
 
 I decided to step back for a moment. After a calming tea break, I revisited the issue with a renewed mindset. Much to my surprise, the root cause wasn't a glitch in my code but an external limitation I hadn't accounted for: the **GitHub API's rate limit**. I had inadvertently overlooked GitHub's rate restriction of 60 requests per hour for each user. Amid my enthusiasm to refine the endpoint, I quickly consumed these requests, resulting in the unforeseen errors.
 
-**But here's the twist**: I was in a race against time, needing to test repeatedly. While I couldn't beat time, I found a way to switch my user identity. 😄 Wondering how? By using a VPN, I was able to mask my IP address. This trick allowed me to simulate different users, bypassing the rate limit. Thanks to some creative problem-solving, A little creative problem-solving, and I was back on track, proving once again that there’s always a way around a roadblock, sometimes just by changing lanes!😌
+**But here's the twist**: I was in a race against time, needing to test repeatedly. While I couldn't beat time, I found a way to switch my user identity. 😄 Wondering how? By using a VPN, I was able to mask my IP address. This trick allowed me to simulate different users, bypassing the rate limit. A little creative problem-solving, and I was back on track, proving once again that there’s always a way around a roadblock, sometimes just by changing lanes!😌
 
 ## Current Progress 🏗️
 
