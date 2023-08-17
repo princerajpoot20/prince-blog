@@ -1,7 +1,7 @@
 ---
 title: Month 1 | Crafting an API Endpoint | AsyncAPI Mentorship Program
 date: 2023-08-10
-tags: ["AsyncAPI" , "RestAPI" , "API-Endpoint" , "AsyncAPI Mentorship Program"]
+tags: ["AsyncAPI"]
 ---
 
 First and foremost, I want to extend my gratitude to my mentor, **David Pereira**, for his invaluable guidance throughout this journey. I'm immensely grateful for his assistance and mentorship. Working with him has been a fantastic opportunity for me. Additionally, I’d like to extend my heartfelt thanks to my sister, **Princy Rajpoot**, for her tremendous support throughout this journey.
